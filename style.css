@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;500&family=League+Spartan:wght@500&family=Plus+Jakarta+Sans:wght@200&family=Poppins:wght@100&family=Titillium+Web:wght@300&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kumbh Sans',sans-serif;
+}
+section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  padding: 10px;
+  background-image: url(./images/bg-bottom.svg);
+}
+.container{
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  align-items: center;
+ 
+  width: 90%;
+  position: relative;
+}
+.container .card{
+  background: white;
+  padding: 20px;
+  /* border: 1px solid red; */
+  width: 260px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0 0 4px #111;
+ 
+}
+.container .card1{
+  background: hsl(236, 63%, 70%);
+  border-radius: 16px;
+  padding: 20px;
+  /* border: 1px solid red; */
+  width: 270px;
+  height: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  
+}
+.line{
+  height: 1px;
+  width: 100%;
+  background-color: hsl(236, 63%, 90%);
+}
+.container .card1 p{
+  color: white;
+  font-size: 16px;
+
+}
+.container .card1 h1{
+  color: white;
+  font-size: 40px;
+}
+.container .card1 h5{
+  color: white;
+  padding-top: 16px;
+ 
+}
+.container .card h5{
+  color: hsl(233, 13%, 49%);
+  padding-top: 20px;
+}
+.container .card p{
+  color: hsl(233, 13%, 49%);
+  font-size: 16px;
+
+}
+.container .card h1{
+  color: hsl(233, 13%, 29%);
+  font-size: 40px;
+}
+.container .card button{
+  width: 100%;
+  height: 40px;
+  color: hsl(233, 13%, 49%);
+  background: transparent;
+  border: 1px solid hsl(233, 13%, 49%);
+  margin-bottom: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.container .card1 button{
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  background: transparent;
+  border: 1px solid white;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.htoggle{
+  display: flex;
+  padding-bottom: 30px;
+  gap: 20px;
+  background:transparent;
+}
+.htoggle p{
+  color: hsl(233, 13%, 49%);
+  font-size: 16px;
+}
+h2{
+  color: hsl(233, 13%, 49%);
+  text-align: center;
+}
+a{
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+
+ /* The switch - the box around the slider */
+ .switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 23px;
+}
+.attribution{
+  padding-top: 40px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsl(256, 26%, 72%);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: hsl(236, 63%, 70%);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+} 
+
+
+
+@media (max-width:600px) {
+  .container{
+    flex-direction: column;
+  }
+  .card1{
+    position: none;
+  }
+  .card{
+    width: 300px;
+    height: 350px;
+  }
+  .container{
+    gap: 450px;
+  }
+  
+}
